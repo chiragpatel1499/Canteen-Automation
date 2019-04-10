@@ -68,7 +68,7 @@ public class checksum extends AppCompatActivity implements PaytmPaymentTransacti
         total_price=intent.getExtras().getString("total_price");
         Log.e("TOTAL PRICE",total_price);
 
-        mid = "JzyqiI85886485116466"; /// your marchant key
+        mid = ""; /// your marchant key
         sendUserDetailTOServerdd dl = new sendUserDetailTOServerdd();
         dl.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 // vollye , retrofit, asynch
@@ -77,7 +77,7 @@ public class checksum extends AppCompatActivity implements PaytmPaymentTransacti
         private ProgressDialog dialog = new ProgressDialog(checksum.this);
         //private String orderId , mid, user_id, amt;
 
-        String url ="https://cpsmarttech.000webhostapp.com/Canteen-Automation/generateChecksum.php";
+        String url ="";
         String varifyurl = //"https://pguat.paytm.com/paytmchecksum/paytmCallback.jsp";
                 "https://securegw.paytm.in/theia/paytmCallback?ORDER_ID=";
         String CHECKSUMHASH ="";
